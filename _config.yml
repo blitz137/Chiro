@@ -1,8 +1,8 @@
 title: Ballard Chiropractic
 email: 
 description: ""
-baseurl: ""
-url: "Chiro"
+baseurl: "/Chiro"
+url: ""
 # uncomment these lines to minify your css
 # sass:
 #     style: compressed
