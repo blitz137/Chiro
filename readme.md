@@ -1,1 +1,1 @@
-# ballard-chiropractic
+# Smith-chiropractic
