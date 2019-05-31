@@ -1,0 +1,97 @@
+@-ms-viewport { width: device-width; }
+section { font-family: "BLOKK"; }
+section h3 { font-family: 'questa_slab'; }
+
+h1 { padding-left: 35px; }
+
+h2 { font-size: 20px; }
+
+h3 { color: #d6b566; }
+
+.body:nth-of-type(1) { max-width: 100%; margin: auto; margin-bottom: 20px; }
+
+.body:nth-of-type(2):before { background-color: white; z-index: -1; content: ""; position: absolute; height: 100%; width: 200%; left: -100%; z-index: -1; }
+
+.titledrop { display: flex; flex-direction: row; align-items: center; }
+
+.fas { font-size: 30px; display: none !important; padding-right: 10px; }
+.fas.fa-bars { display: block !important; padding-right: 0; }
+.fas.visible { display: block; }
+
+ul { display: none; list-style-type: none; margin-top: 0; padding-left: 65px; }
+ul li a { line-height: 2em; color: #d6b566; }
+
+.rectxt { display: flex; flex-direction: column; justify-content: flex-end; width: 100%; }
+.rectxt #p { padding-left: 35px; }
+
+.rectop { margin: 0; /*height: 650px;*/ }
+
+.recdownloads { margin-bottom: 50px; display: flex; max-width: 100%; }
+.recdownloads .img-wrapper { top: 0; left: 0; right: 0; bottom: 0; }
+.recdownloads .img-wrapper:before { content: ''; display: block; position: static; width: 100%; }
+.recdownloads .img-wrapper img { margin: 0; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; max-width: 365px; min-width: 365px; }
+
+.downloadsrec { display: flex; justify-content: space-around; flex-direction: row; }
+
+.rec2 { display: flex; flex-direction: column; margin: 0px 25px; margin-bottom: 0; }
+.rec2:nth-of-type(2) { margin-right: 0px; }
+.rec2 a { background-color: #d6b566; width: 250px; padding: 10px 25px; margin: 10px; }
+.rec2 a:nth-of-type(4) { margin-bottom: 4px; }
+
+img { max-width: 33%; margin-top: 20px; margin-bottom: 20px; }
+
+.droprec { min-height: 500px; display: flex; }
+
+.rightdrop { /*display: none;*/ width: 70%; }
+
+/* .article div {
+	display: none;
+} */
+.article div { display: flex; }
+
+/* .article h3{
+	display:none;
+} */
+.article h3 { display: flex; }
+
+.article .rightdrop div { display: flex; flex-direction: row; justify-content: space-around; }
+
+section { display: none; max-width: 66%; margin: auto; margin-right: 0; }
+section p { max-width: 45%; padding: 0 10px; }
+section.start { display: flex; flex-direction: column; }
+section:target { flex-direction: column; display: flex; }
+
+.rightdrop p { margin: auto; max-width: 40%; }
+
+.bottombackground { margin-top: 50px; }
+
+/* ******************************resizing***************************************** */
+@media screen and (max-width: 1097px) { .rec2 { margin: auto; } }
+@media screen and (max-width: 1015px) { .downloadsrec .rec2 a { padding: 10px 100px; width: auto; }
+  .downloadsrec .rec2 a.PForm { padding: 10px 75px; } }
+@media screen and (max-width: 910px) { .downloadsrec .rec2 a { padding: 10px 50px; width: auto; } }
+@media screen and (max-width: 850px) { .recdownloads .rectxt { max-width: 60%; }
+  .recdownloads .img-wrapper { top: auto; bottom: auto; left: auto; right: auto; min-width: 33%; width: 100%; overflow: hidden; }
+  .recdownloads .img-wrapper:before { content: none; }
+  .recdownloads .img-wrapper img { margin: auto; width: 100%; height: 100%; left: 50%; transform: translate(-50%); position: relative; max-width: 100%; } }
+@media screen and (max-width: 750px) { .body { max-width: 100%; }
+  .centerfix { margin: auto; }
+  .titledrop img { margin: 0; }
+  .recdownloads { display: flex; flex-direction: column; max-height: 100%; }
+  .recdownloads .img-wrapper img { width: auto; max-width: 90%; margin: auto; }
+  .recdownloads .rectxt { margin: auto; max-width: 90%; }
+  .recdownloads .downloadsrec { flex-direction: row; }
+  .recdownloads .downloadsrec .rec2 { margin-left: 0; }
+  .recdownloads .downloadsrec .rec2 a { width: 250px; padding: 10px 25px; }
+  .droprec { display: flex; flex-direction: column; }
+  .droprec .leftdrop { display: flex; width: 100%; background-color: #dedee1; flex-direction: column; margin: auto; }
+  .droprec section { max-width: 90%; margin: auto; }
+  .droprec section .article { position: relative; }
+  .droprec section .article div { display: flex; flex-direction: column; } }
+@media screen and (max-width: 650px) { .recdownloads .downloadsrec .rec2 { margin: 0; }
+  .recdownloads .downloadsrec .rec2 a { padding: 20px 55px; width: auto; } }
+h2.visible + ul { display: block; }
+
+.visible { display: flex !important; flex-direction: column; }
+
+@media screen and (max-width: 400px) { img { min-width: 0 !important; max-width: 100vw !important; } }

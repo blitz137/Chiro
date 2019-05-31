@@ -1,0 +1,39 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@-ms-viewport{
+  width: device-width;
+}
+.blokk{
+	h3{
+		font-family: 'questa_slab';
+	}
+}
+.body{
+	//background-color: #dedee1;
+	max-width: 100%;
+	margin: auto;
+	margin-bottom: 20px;
+
+}
+.schedbody{
+
+	height:1600px;
+
+	
+}
+.schedp{
+		max-width: 90%;
+		margin: auto;
+		margin-bottom: 10px;
+		div{
+height: 100%;
+		a{
+			background-color: #d6b566;
+		width:250px;
+		    padding: 10px 25px;
+		   	margin: 10px 0 ;
+		}
+	}
+	}

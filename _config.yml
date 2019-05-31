@@ -1,0 +1,13 @@
+title: Ballard Chiropractic
+email: 
+description: ""
+baseurl: ""
+url: ""
+# uncomment these lines to minify your css
+# sass:
+#     style: compressed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - CNAME
+  - .gitignore

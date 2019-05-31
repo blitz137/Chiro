@@ -1,0 +1,296 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@-ms-viewport{
+  width: device-width;
+}
+
+.body{
+
+  max-width: none;
+}
+
+.all{
+
+  max-width: 1080px;
+  margin: auto;
+}
+ .blokk{
+    font-family: "BLOKK";
+  }
+
+
+.aboutustxt{
+  
+  height: 100%;
+  max-width:66%;
+  div{
+    padding: 10px;
+  }
+
+  p{
+    padding: 0 10px;
+    margin-bottom: 0;
+  }
+
+    &:nth-of-type(1){
+     padding: 0 10px;
+     margin: 0;
+    }
+  padding: 20px!important;
+  margin-top: 10px!important; 
+  margin-bottom: 10px!important;
+  background-color: white;
+}
+
+.txtps{
+  display: flex;
+  flex-direction: row;
+   div{
+    max-width: 50%;
+  }
+}
+
+iframe{
+  height: 400px;
+  left: 0;
+  top: 0;
+  width: 100%;
+ 
+}
+
+.aboutus{
+ // background-color: #dedee1;
+  display: flex;
+  max-width: 100%;
+  height: 100%;
+  
+  h1{
+    padding-left: 30px;
+    margin-bottom: 0;
+  }
+  
+  &.three{
+    padding-bottom: 10px;
+  }
+
+  &.one{
+    padding-top: 10px;
+  }
+  .divimg{
+    min-width: 360px;
+    width: 100%;
+   // position: relative;
+    overflow: hidden;
+    padding-top: 30px;
+    margin-bottom: 40px;
+    img{
+      width: auto;
+      
+      min-width: 100%;
+      
+      max-height: 400px;
+      left: 50%;
+      transform:translate(-50%);
+      position: relative;
+    }
+  }
+}
+
+.patientbutton{
+  display: flex;
+  padding-left: 30px!important;
+  font-size: 20px;
+  max-width: 100%!important;
+  
+  &.two{
+
+  }
+
+  button{
+   // font-weight: bold; 
+    background-color: #e2bc53;
+    border:none;
+    padding:15px 48px;
+  }
+}
+
+.backgroundabout{
+  max-width:90%;
+  background-color: white;
+  margin: auto;
+
+  .txtps{ 
+    
+    div{
+      max-width: 33%;
+      
+      p{
+        padding: 0 10px;
+
+      }
+    }
+  }
+
+}
+
+.whattoexpect{
+
+  h1{
+    margin-top: 0;
+  }
+  margin: auto;
+  flex-direction: column;
+ // background-color: #dedee1;
+  display: flex;
+  padding-top: 10px;
+  max-height: 450px;
+  padding-bottom: 10px;
+
+  .patientbutton{
+    padding-left: 0!important;
+  }
+}
+
+.whattotxt{
+  padding: 10px;
+  padding-bottom: none;
+  margin-top: 10px; 
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+
+
+
+
+ @media screen and (max-width: 990px){
+
+.aboutus{
+  
+&.one{
+  height: 100%;
+}
+ max-width: 100%;
+  .aboutustxt{
+
+    height: 100%;
+    padding: 20px!important;
+    //width: 100%;
+   max-width: 66%;
+    max-height: 66%;
+    }
+    .txtps{
+      display: flex;
+       
+    } 
+}
+  
+} 
+
+ @media screen and (max-width: 940px){
+  .txtps{
+
+        flex-direction:column;
+        div{
+          padding-bottom: 0;
+          max-width: 100%;
+        }
+
+      }
+
+
+.whattoexpect{
+  max-height: 100%;
+   flex-direction:column;
+       .txtps{
+
+        div{
+
+          max-width: 90%;
+        }
+}
+}
+ }
+ 
+ @media screen and (max-width: 720px){
+
+  .divimg{
+    margin: auto;
+  }
+   .whattoexpect{
+      max-height: 100%;
+      flex-direction:column;
+      max-height: 100%;
+      .backgroundabout{
+        .txtps{
+          flex-direction:column;
+          div{
+            max-width: 100%;
+          }
+        }
+        flex-direction:column;
+      }
+    }
+
+
+    .aboutus{
+      flex-direction:column;
+      height: 100%;
+      max-height: 100%;
+     .divimg{
+    img{
+       width: auto;
+      height: auto;
+      max-width: 100%;
+    max-height: 100%;
+
+    }
+  }
+      .txtps{
+
+        flex-direction:row;
+        div{
+          max-width: 50%;
+        }
+
+      }
+
+
+       .aboutustxt{
+        max-width:100%;
+     /*  .txtps{
+        flex-direction:column;
+        div{
+          max-width: 100%;
+        
+        }
+      } */
+    }/*
+      img{
+        width: 95%;
+        max-width: 95%;
+        max-height: 400px;
+        margin: auto;
+      }
+    
+   */
+    } 
+} 
+
+@media screen and (max-width: 550px){
+   
+  .aboutus{
+   .txtps{
+
+        flex-direction:column;
+        div{
+          padding-bottom: 0;
+          max-width: 100%;
+        }
+
+      }
+  }
+
+}

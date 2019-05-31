@@ -1,0 +1,58 @@
+@-ms-viewport { width: device-width; }
+.body { max-width: none; }
+
+.all { max-width: 1080px; margin: auto; }
+
+.blokk { font-family: "BLOKK"; }
+
+.aboutustxt { height: 100%; max-width: 66%; padding: 20px !important; margin-top: 10px !important; margin-bottom: 10px !important; background-color: white; }
+.aboutustxt div { padding: 10px; }
+.aboutustxt p { padding: 0 10px; margin-bottom: 0; }
+.aboutustxt:nth-of-type(1) { padding: 0 10px; margin: 0; }
+
+.txtps { display: flex; flex-direction: row; }
+.txtps div { max-width: 50%; }
+
+iframe { height: 400px; left: 0; top: 0; width: 100%; }
+
+.aboutus { display: flex; max-width: 100%; height: 100%; }
+.aboutus h1 { padding-left: 30px; margin-bottom: 0; }
+.aboutus.three { padding-bottom: 10px; }
+.aboutus.one { padding-top: 10px; }
+.aboutus .divimg { min-width: 360px; width: 100%; overflow: hidden; padding-top: 30px; margin-bottom: 40px; }
+.aboutus .divimg img { width: auto; min-width: 100%; max-height: 400px; left: 50%; transform: translate(-50%); position: relative; }
+
+.patientbutton { display: flex; padding-left: 30px !important; font-size: 20px; max-width: 100% !important; }
+.patientbutton button { background-color: #e2bc53; border: none; padding: 15px 48px; }
+
+.backgroundabout { max-width: 90%; background-color: white; margin: auto; }
+.backgroundabout .txtps div { max-width: 33%; }
+.backgroundabout .txtps div p { padding: 0 10px; }
+
+.whattoexpect { margin: auto; flex-direction: column; display: flex; padding-top: 10px; max-height: 450px; padding-bottom: 10px; }
+.whattoexpect h1 { margin-top: 0; }
+.whattoexpect .patientbutton { padding-left: 0 !important; }
+
+.whattotxt { padding: 10px; padding-bottom: none; margin-top: 10px; margin-bottom: 10px; background-color: white; }
+
+@media screen and (max-width: 990px) { .aboutus { max-width: 100%; }
+  .aboutus.one { height: 100%; }
+  .aboutus .aboutustxt { height: 100%; padding: 20px !important; max-width: 66%; max-height: 66%; }
+  .aboutus .txtps { display: flex; } }
+@media screen and (max-width: 940px) { .txtps { flex-direction: column; }
+  .txtps div { padding-bottom: 0; max-width: 100%; }
+  .whattoexpect { max-height: 100%; flex-direction: column; }
+  .whattoexpect .txtps div { max-width: 90%; } }
+@media screen and (max-width: 720px) { .divimg { margin: auto; }
+  .whattoexpect { max-height: 100%; flex-direction: column; max-height: 100%; }
+  .whattoexpect .backgroundabout { flex-direction: column; }
+  .whattoexpect .backgroundabout .txtps { flex-direction: column; }
+  .whattoexpect .backgroundabout .txtps div { max-width: 100%; }
+  .aboutus { flex-direction: column; height: 100%; max-height: 100%;   /* img{ width: 95%; max-width: 95%; max-height: 400px; margin: auto; } 
+*/ }
+  .aboutus .divimg img { width: auto; height: auto; max-width: 100%; max-height: 100%; }
+  .aboutus .txtps { flex-direction: row; }
+  .aboutus .txtps div { max-width: 50%; }
+  .aboutus .aboutustxt { max-width: 100%; /*  .txtps{ flex-direction:column; div{ max-width: 100%;  } } */ } }
+@media screen and (max-width: 550px) { .aboutus .txtps { flex-direction: column; }
+  .aboutus .txtps div { padding-bottom: 0; max-width: 100%; } }

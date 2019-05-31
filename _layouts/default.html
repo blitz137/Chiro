@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{page.title}} | Chiropractic Site</title>
+  <link rel="stylesheet" type="text/css" href="CSS/global.css">
+  {% if page.stylesheet && page.stylesheet != "" %}<link rel="stylesheet" href="CSS/{{ page.stylesheet }}.css">{% endif %}
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.typekit.net/bas7yjg.css"> 
+</head>
+<body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<div class="newtop">
+
+<div class="body"> 
+  <div class="fbnav">
+  <div class="fbdiv">
+  <a href="https://www.facebook.com/"><img class="facebook" src="{{site.baseurl}}/IMG/FB.png"></a>
+</div>
+    <nav>
+        <div class="logo">
+            <a href="{{site.baseurl}}/" >Smith Chiropractic</a>
+        </div>
+
+        <div class="topnav">
+        <a href="{{site.baseurl}}/about" >ABOUT</a>
+        <a href="{{site.baseurl}}/resources" >RESOURCES</a>
+        <a class="sched" href="{{site.baseurl}}/schedule" >SCHEDULE APPOINTMENT</a>
+
+        <hr>
+        </div>
+        <div class="navbars">
+           <i class="fas fa-bars"></i>
+
+         </div>
+
+    </nav>
+  </div>
+    <div class="dropnav">
+       <a href="{{site.baseurl}}/about" >ABOUT</a>
+        <a href="{{site.baseurl}}/resources" >RESOURCES</a>
+        <a href="{{site.baseurl}}/services" >SERVICES</a>
+        <a class="sched" href="{{site.baseurl}}/schedule" >SCHEDULE APPOINTMENT</a>
+    </div>
+
+
+
+
+
+
+      {{ content }}
+
+
+
+
+
+
+
+<div class="bottombackground">
+    <div class="newbottom">
+       
+        <div>
+            <p>100 NOT REAL ROAD</p>
+            <P>FAKE CITY, TX 12345</P>
+            <p>PHONE:(409) 123-4567</p>
+            <p><a href="mailto:email@email.com">EMAIL: <em>
+DrSmithChiro@GMAIL.COM</em></a></p>
+        </div>
+        <div class="bottomnav">
+           <a href="{{site.baseurl}}/">HOME</a>
+           <a href="{{site.baseurl}}/about">ABOUT</a>
+           <a href="{{site.baseurl}}/resources">RESOURCES</a>
+           <a href="{{site.baseurl}}/services">SERVICES</a>
+           <a href="{{site.baseurl}}/schedule">SCHEDULE</a>
+         </div>
+
+     </div>
+</div>
+
+
+<script type="text/javascript" src="JS/scripts.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

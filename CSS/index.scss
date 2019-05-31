@@ -1,0 +1,323 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@-ms-viewport{
+  width: device-width;
+}
+
+.fbnav{
+  .fbdiv{
+    .facebook{
+      margin-right: 0;
+    }
+  }
+}
+
+.reviewp{
+  opacity: 0;
+   transition: opacity 3s;
+  display: none;
+   font-size: 16px;
+  font-family: century-gothic, sans-serif;
+font-weight: 400;
+font-style: normal;
+min-height: 130px;
+
+  
+}
+
+.fadeout{
+  opacity: 0!important;
+  transition: opacity 3s;
+  
+}
+.visible{
+   transition: opacity 3s;
+    display: block!important;
+     opacity: 1; 
+      -webkit-animation:fadein 3s;  
+  }
+html{
+ body{
+ // max-width: 1080px;
+  margin:auto;
+ .body{
+  &:before{
+    background-color: white;
+  }
+ }
+
+}
+}
+
+.facebook{
+  margin-right: 0;
+}
+
+ @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.schedbody{
+  display: flex;
+  margin: auto;
+  height: 100%;
+  width:90%;
+  height: 1600px;
+  flex-direction: column;
+}
+
+
+a{
+   border-bottom:none!important;
+  color:black;
+  text-decoration: none;
+}
+.body{
+  margin: auto;
+  max-width: 90%;
+}
+nav{
+  background-color: transparent;
+  height: 50px;
+ 
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+
+
+}
+
+.topnav{
+  word-spacing: 1.25em;
+
+}
+.topnav .sched{
+  word-spacing: .05em;
+}
+hr{
+  border: .5px solid black;
+  color:black;
+  width: 100%;
+}
+
+.newtop{
+  max-width: 1080px;
+  margin:auto;
+  background-image: url("{{site.baseurl}}/IMG/background.jpg")!important;
+height: 650px!important;
+background-repeat: no-repeat!important;
+background-size: cover!important;
+background-position: center center!important;
+ 
+}
+/* @media screen and (max-width: 850px){
+.newtop{
+  margin: 1;
+  background-image: url("/{{site.baseurl}}/IMG/background.jpg")!important;
+height: 650px!important;
+background-repeat: no-repeat!important;
+background-size: cover!important;
+background-position: center center!important;
+ 
+}
+
+} */
+.p2{
+   display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  max-width: 35%;
+ 
+
+
+  p:nth-of-type(1){ 
+    line-height: 1.5em;
+    margin-bottom: 10px;
+  } p:nth-of-type(2){
+    margin: 0;
+    line-height: 1em;
+    font-size: 12px;
+  }
+  p:nth-of-type(3){
+    margin: 0;
+    font-size: 12px;
+  }
+
+}
+.p{
+  display: flex;
+  max-width: 33%;
+  line-height: 1.5em;
+}
+.reviewbanner{
+  
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 90%;
+  align-items: center;
+}
+.reviewp{
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+.patientbutton{
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  font-size: 20px;
+
+}
+.patientbutton button{
+  background-color: #e2bc53;
+  border:none;
+  padding:15px 100px;
+}
+.midbanner{
+  margin: 20px auto;
+  width: 100%;
+  max-width: 1080px;
+  height: 275px;
+}
+.midbanner h2{
+  text-align: center;
+  margin-bottom: 0;
+
+}
+
+.newbottom{
+  line-height: 1.5em;
+  padding: 20px;
+  color:  #dddfdd;
+  margin: auto;
+  max-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  align-items: flex-end;
+
+}
+.newbottom a{
+  text-decoration: none;
+  color:#dddfdd;
+
+
+}
+.bottomnav{
+ word-spacing: 1.5em;
+}
+
+.bottombackground{
+  background-color: #2d352d;
+}
+
+
+
+@media screen and (max-width: 735px){
+
+
+.p{
+  font-size: .5em;
+   max-width:80%!important;
+  margin: auto;
+}
+.p2{
+  max-width:80%!important;
+  margin: auto;
+}
+
+.patientbutton{
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  font-size: 20px;
+  flex-direction: column;
+    a{
+      margin: auto;
+
+    }
+}
+.patientbutton button{
+  background-color: #e2bc53;
+  border:none;
+  padding:10px 50px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width:300px;
+}
+.midbanner{
+  margin: auto;
+  
+  height: 275px;
+}
+.midbanner h2{
+  text-align: center;
+  margin-bottom: 0;
+
+}
+
+
+
+}
+@media screen and (max-width: 415px){
+.p2{
+  font-size: 18px!important;
+  max-width:90%!important;
+  margin: auto;
+}
+}
+
+
+@media screen and (max-width: 850px){
+.dropnav{
+  width: auto!important;
+  a{
+    &:hover{
+      background-color: transparent!important;
+    }
+  }
+}
+.p{
+  max-width: 45%;
+}
+.p2{
+
+  max-width: 55%;
+}
+.patientbutton{
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  font-size: 20px;
+
+}
+.patientbutton button{
+  background-color: #e2bc53;
+  border:none;
+  padding:10px 50px;
+}
+.midbanner{
+  margin: auto;
+  
+  height: 100%;
+}
+.midbanner h2{
+  text-align: center;
+  margin-bottom: 0;
+
+}
+
+
+}
